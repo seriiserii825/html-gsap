@@ -27,7 +27,6 @@ export default function navigationMouseLeave() {
 	}
 
 	ScrollTrigger.create({
-		markers: true,
 		start: 100,
 		toggleClass: {
 			targets: "body",
