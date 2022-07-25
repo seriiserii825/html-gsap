@@ -17,7 +17,7 @@
   --loader-height: 50vh;
 
   --v-spacing: 10vh;
-  --h-gutter: 6.6vw;  
+  --h-gutter: 6.6vw;
 
   --easing: cubic-bezier(0.5, 0.7, 0.4, 1);
 }
@@ -40,7 +40,7 @@ body {
 .logo__img {
   width: 55px;
   height: 55px;
-  background: url('../img/img_logo.svg') no-repeat center;
+  background: url('../../i/img_logo.svg') no-repeat center;
   background-size: 55px 55px;
   display: block;
   position: absolute;
@@ -198,15 +198,15 @@ header h1 span {
   top: auto;
   bottom: -3.8vw;
   left: 58%;
-  background: url('../img/img_logo.svg') no-repeat center;
+  background: url('../../i/img_logo.svg') no-repeat center;
   background-size: 50% 50%;
 }
 .cta__circle--logo {
   width: 7.7vw;
   height: 7.7vw;
-  background: url('../img/img_scroll-badge.svg') no-repeat center;
+  background: url('../../i/img_scroll-badge.svg') no-repeat center;
   background-size: 100% 100%;
-  animation: rotation 45s linear infinite; 
+  animation: rotation 45s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
@@ -216,11 +216,11 @@ header h1 span {
   100% {  transform:  rotate(360deg) ; }
 }
 
-/* =Header Gallery (random image proportion) 
+/* =Header Gallery (random image proportion)
   Calculate aspect by setting a width first, then adjust padding bottom.
   Example for image that you want to show as 16/9 - landscape
   width: 24vw, padding-bottom: (9/16) * width = 13.5
-  
+
   Example for image that you want to show as 9/16 - portrait
   width: 24vw, padding-bottom: (16/9) * width = 42.6
 
@@ -608,7 +608,7 @@ section {
 }
 .fixed-nav a {
   color: var(--text-color);
-  text-decoration: none; 
+  text-decoration: none;
   font-family: var(--font-headings);
   position: relative;
   padding-left: 1.8vw;
