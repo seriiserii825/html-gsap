@@ -144,7 +144,8 @@ gulp.task("watch", function () {
 		server: {
 			baseDir: "./build/"
 		},
-		notify: true
+		notify: true,
+    open: false
 	});
 	gulp.watch('src/assets/sass/**/*.scss', gulp.series('scss'));
 	gulp.watch('src/pug/**/*.pug', gulp.series('pug'));

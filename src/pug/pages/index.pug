@@ -1,15 +1,22 @@
 extends template
 
 block css
-	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+  link(rel="stylesheet" type="text/css" href="assets/css/my.css")
 
 block title
-	title Main
+  title Main
 
 block content
-	include ../includes/mixins
+  include ../blocks/main-header
+  div#main
+    include ../blocks/header
+    include ../blocks/gallery
+    include ../blocks/portfolio
+    include ../blocks/blog
+    include ../blocks/how-we-work
+    include ../blocks/contact
 
-	h1 Webpac IE 110 Error
+  aside.fill-background(style='background-color: #ACB7AE')
 
 block scripts
-	script(src="assets/js/dist/webpack.js")
+  script(src="assets/js/dist/webpack.js")
