@@ -21,6 +21,10 @@ export default function pins() {
 		);
 	}
 
+	function updateBodyColor(color) {
+		gsap.to("body", { backgroundColor: color });
+	}
+
 	gsap.utils.toArray(".stage").forEach((stage, index) => {
 		let navLinks = gsap.utils.toArray(".fixed-nav li");
 
@@ -31,6 +35,10 @@ export default function pins() {
 			toggleClass: {
 				targets: navLinks[index],
 				className: "is-active",
+			},
+			onUpdate: () => {
+				const colorVar = stage.dataset.color;
+				updateBodyColor(colorVar);
 			},
 			markers: true,
 		});
