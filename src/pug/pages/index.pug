@@ -1,0 +1,15 @@
+extends template
+
+block css
+	link(rel="stylesheet" type="text/css" href="assets/css/my.css")
+
+block title
+	title Main
+
+block content
+	include ../includes/mixins
+
+	h1 Webpac IE 110 Error
+
+block scripts
+	script(src="assets/js/dist/webpack.js")
