@@ -1,3 +1,5 @@
+import navigationMouseLeave from './modules/nav-links-mouseleave';
+
 window.addEventListener("DOMContentLoaded", function () {
-	console.log("some thing for me");
+  navigationMouseLeave();
 });
